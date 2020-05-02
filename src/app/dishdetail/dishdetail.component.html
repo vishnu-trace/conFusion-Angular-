@@ -1,7 +1,7 @@
 <div class="container"
     fxLayout="column" 
     fxLayoutGap="10px" >
-<div fxFlex fxLayout ="row">
+<div fxFlex fxLayout ="row" *ngIf="dish">
         <mat-card *ngIf="dish" style="width: 40%;" >
             <mat-card-header>
                 <mat-card-title>
@@ -30,5 +30,9 @@
             </mat-list-item> 
         </mat-list>
         </mat-list>
+    </div>
+    <div fxFlex [hidden]="dish">
+        <mat-spinner></mat-spinner>
+        <h4>Loading . . .  Please Wait.</h4>
     </div>
 </div>
