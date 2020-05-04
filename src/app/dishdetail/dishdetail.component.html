@@ -63,8 +63,8 @@
             max="5" formControlName = "rating"></mat-slider>
         </p>
         <p>
-            <mat-form-field>
-                <input matInput formControlName="comment" placeholder="Comment" type="text">
+            <mat-form-field class="full-width">
+                <textarea matInput formControlName="comment" placeholder="Comment" type="text" rows='12'></textarea>
                 <mat-error *ngIf="formErrors.comment">
                     {{formErrors.comment}}
                 </mat-error>

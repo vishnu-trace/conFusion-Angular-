@@ -41,9 +41,10 @@ import{ProcessHTTPMsgService} from './services/process-httpmsg.service';
 
 
 import { baseURL} from './shared/baseurl';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
-  declarations: [ AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, HomeComponent, AboutComponent, ContactComponent, LoginComponent],
+  declarations: [ AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, HomeComponent, AboutComponent, ContactComponent, LoginComponent, HighlightDirective],
   imports: [
     BrowserAnimationsModule,
     MatToolbarModule,
